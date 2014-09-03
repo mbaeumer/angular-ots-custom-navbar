@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap navbar custom styles </title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/app.css">
+    <link rel="stylesheet" href="lib/css/custom-navbar-softhouse.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body ng-app="app" ng-controller="appController">
+<!-- /TOP MENU -->
+<div class="navbar navbar-default navbar-fixed-top">
+    <a class="navbar-brand" rel="home" href="#" title="Buy Sell Rent Everyting">
+        <img style="max-width:100px; margin-top: -7px;"
+             src="/img/Stor-Logga-Softhouse.png">
+    </a>
+    <ul class="nav nav-pills">
+        <li><a href="#/inspections">Rapporter</a></li>
+        <li><a href="#/summary">Sammanfattning</a></li>
+    </ul>
+
+
+</div>
+<!-- MAIN PAGE -->
+<!-- /MAIN PAGE -->
+
+<script src="lib/angular-1.2.9.js"></script>
+<script src="lib/angular-route.js"></script>
+<script src="lib/angular-resource.js"></script>
+
+<script src="lib/angular-strap-min.js"></script>
+<script src="lib/ui-bootstrap-0.10.0.js"></script>
+<script src="lib/angular-touch.js"></script>
+<script src="app.js"></script>
+
+<script src="controllers/appController.js"></script>
+
+<!-- MAIN CONTENT -->
+<div ng-view id="mainContent">
+</div>
+</body>
+</html>
